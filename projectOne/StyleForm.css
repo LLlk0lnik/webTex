@@ -66,3 +66,16 @@ h3 {
       background-position: left 1000px top 0;
     }
   }
+
+  #floating-button {
+    position: fixed;
+    bottom: 20px; /* Расстояние от нижней грани */
+    right: 20px;  /* Расстояние от правой грани */
+    z-index: 1000; /* Обеспечивает, что кнопка будет над другими элементами */
+    border-radius: 50%; /* Круглая форма кнопки */
+    width: 50px;  /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    display: flex; /* Центрирование текста */
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+}
