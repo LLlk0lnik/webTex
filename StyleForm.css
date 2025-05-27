@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 10vh;
+  }
+  
+  a {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.5);
+    background: url(https://i.sstatic.net/o0mJK.jpg);
+    background-size: 100% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: wave 6s infinite alternate;
+    animation: wave 6s infinite alternate;
+  }
+  
+  @-webkit-keyframes wave {
+    0% {
+      background-position: left 0 top 0;
+    }
+    100% {
+      background-position: left 1000px top 0;
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: left 0 top 0;
+    }
+    100% {
+      background-position: left 1000px top 0;
+    }
+  }
+
+  #floating-button {
+    position: fixed;
+    bottom: 20px; /* Расстояние от нижней грани */
+    right: 20px;  /* Расстояние от правой грани */
+    z-index: 1000; /* Обеспечивает, что кнопка будет над другими элементами */
+    border-radius: 50%; /* Круглая форма кнопки */
+    width: 50px;  /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    display: flex; /* Центрирование текста */
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+}
